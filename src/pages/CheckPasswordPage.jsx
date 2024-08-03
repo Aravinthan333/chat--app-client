@@ -42,8 +42,8 @@ const CheckPasswordPage = () => {
     const URL = `https://chat-app-server-qv0f.onrender.com/api/password`;
 
     try {
-      const response = await axios.post({
-        // method: "post",
+      const response = await axios({
+        method: "post",
         url: URL,
         data: {
           userId: location?.state?._id,

@@ -27,7 +27,7 @@ const Home = () => {
       // const URL = `${process.env.BACKEND_URL}/api/user-details`;
       const URL = `https://chat-app-server-qv0f.onrender.com/api/user-details`;
 
-      const response = await axios.get({
+      const response = await axios({
         url: URL,
         withCredentials: true,
       });
